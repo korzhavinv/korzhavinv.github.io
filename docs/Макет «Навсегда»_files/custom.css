@@ -1,0 +1,26 @@
+    
+    .t778__mark, .t-descr, .t-input { 
+        
+        font-family: 'Raleway';
+        font-weight: Normal; }
+        
+        
+        
+
+
+::-webkit-scrollbar-thumb {
+/* Укажи cвой цвет скроллбара */
+background: #111010;
+/* Укажи радиус скругления скроллбара */
+border-radius: 0px;
+}
+::-webkit-scrollbar {
+/* Укажи ширину вертикального скроллбара */
+width: 5px;
+/* Укажи высоту вертикального скроллбара */
+height: 10px;
+/* Укажи цвет фона под скроллбаром */
+background: #FCFCFC;
+}
+
+
