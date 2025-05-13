@@ -6190,6 +6190,73 @@
     </style>
     <link href="./Макет «Навсегда»_files/tilda-zero-form-errorbox.min.css" rel="stylesheet" id="t-zero-form-errorbox-styles">
     <script src="./Макет «Навсегда»_files/tilda-errors-1.0.min.js" async=""></script>
+
+
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: auto;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+      .radio-group, .checkbox-group {
+        margin-bottom: 15px;
+      }
+      .checkbox-group label, .radio-group label {
+        font-weight: normal;
+        display: block;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #000;
+        background: white;
+        cursor: pointer;
+      }
+    </style>
+    <form id="rsvpForm" action="https://script.google.com/macros/s/AKfycbwnt4HFXOQaf_oLsho6x3z66SBEtmFoYjMMJaHl-nb94cPJguirDFs2pMiW_hv54-ZA/exec" method="post">
+      <label>Имя и Фамилия</label>
+      <p style="font-weight: normal;">Если будете с парой или семьей, напишите их имена, а также возраст детей</p>
+      <input type="text" name="fullname" placeholder="Пётр и Анастасия Ивановы" required />
+
+      <div class="radio-group">
+        <label>Присутствие на торжестве</label>
+        <label><input type="radio" name="attendance" value="Придём" required /> С удовольствием приеду (приедем)</label>
+        <label><input type="radio" name="attendance" value="Не приедем" /> К сожалению, не получится</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>Предпочтения по еде</label>
+        <label><input type="checkbox" name="food" value="Рыба и морепродукты" /> Рыба и морепродукты</label>
+        <label><input type="checkbox" name="food" value="Вегетарианская кухня" /> Вегетарианская кухня</label>
+        <label><input type="checkbox" name="food" value="Мясо" /> Побольше мяса</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>Предпочтения по напиткам</label>
+        <label><input type="checkbox" name="drink" value="Шампанское" /> Шампанское</label>
+        <label><input type="checkbox" name="drink" value="Белое вино" /> Белое вино</label>
+        <label><input type="checkbox" name="drink" value="Красное вино" /> Красное вино</label>
+        <label><input type="checkbox" name="drink" value="Водка" /> Водка</label>
+        <label><input type="checkbox" name="drink" value="Виски" /> Виски</label>
+        <label><input type="checkbox" name="drink" value="Коньяк" /> Коньяк</label>
+        <label><input type="checkbox" name="drink" value="Безалкогольные" /> Безалкогольные напитки</label>
+        <label><input type="checkbox" name="drink" value="Свой вариант" /> Свой вариант</label>
+      </div>
+
+      <button type="submit">Отправить</button>
+    </form>
+
 </body>
 
 </html>
