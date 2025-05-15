@@ -4435,12 +4435,16 @@
                                     font-family: "Raleway";
                                 }
                             </style>
-                            <form class="t-form t-form_inputs-total_4 t-form_bbonly js-form-proccess" id="form852226862" name="form852226862" action="https://script.google.com/macros/s/AKfycbwnt4HFXOQaf_oLsho6x3z66SBEtmFoYjMMJaHl-nb94cPJguirDFs2pMiW_hv54-ZA/exec" method="POST" role="form" data-formactiontype="2" data-inputbox=".t-input-group" data-success-callback="t396_onSuccess" data-success-popup="y" data-error-popup="y"><input type="hidden" tabindex="-1" value="a129bfc3f50db771eef6160a46b944e6" name="formservices[]" class="js-formaction-services"><input type="hidden" tabindex="-1" value="1713871529228" name="tildaspec-elemid">
+
+
+
+                            <form class="t-form t-form_inputs-total_4 t-form_bbonly js-form-proccess" id="form852226862" name="form852226862" role="form" data-formactiontype="2" data-inputbox=".t-input-group" data-success-callback="t396_onSuccess" data-success-popup="y" data-error-popup="y"><input type="hidden" tabindex="-1" value="a129bfc3f50db771eef6160a46b944e6" name="formservices[]" class="js-formaction-services">
+                                <input type="hidden" tabindex="-1" value="1713871529228" name="tildaspec-elemid">
                                 <div class="js-successbox t-form__successbox t-text t-text_sm" style="display: none;"></div>
                                 <div class="t-form__inputsbox">
                                     <div class="t-input-group t-input-group_ta" data-input-lid="1713871529228" style="margin-bottom: 30px;"><label for="ta-1713871529228" class="t-input-title" data-redactor-toolbar="no" field="nullli_title__1713871529228" style="display: block; color: rgb(0, 0, 0); font-family: Raleway; padding-bottom: 7px; font-size: 16px; font-weight: 500;">Имя и Фамилия</label>
                                         <div class="t-input-subtitle t-descr t-descr_xxs t-opacity_70" field="nullli_subtitle__1713871529228" style="color: rgb(0, 0, 0); font-family: Raleway; padding-bottom: 7px;">Если будете с парой или семьей, напишите их имена, а также возраст детей</div>
-                                        <div class="t-input-block"><textarea id="ta-1713871529228" name="Имя и Фамилия" class="t-input js-tilda-rule t-input_bbonly t-input-inline-styles" placeholder="Пётр и Анастасия Ивановы" data-tilda-req="1" rows="1" style="color: rgb(0, 0, 0); border: 1px solid rgb(218, 218, 218); background-color: rgb(255, 255, 255); font-size: 14px; font-weight: 400; height: 35px;"></textarea>
+                                        <div class="t-input-block"><textarea id="ta-1713871529228" name="fullname" class="t-input js-tilda-rule t-input_bbonly t-input-inline-styles" placeholder="Пётр и Анастасия Ивановы" data-tilda-req="1" rows="1" style="color: rgb(0, 0, 0); border: 1px solid rgb(218, 218, 218); background-color: rgb(255, 255, 255); font-size: 14px; font-weight: 400; height: 35px;"></textarea>
                                             <div class="t-input-error"></div>
                                         </div>
                                     </div>
@@ -4448,9 +4452,9 @@
                                         <div class="t-input-title" data-redactor-toolbar="no" field="nullli_title__1713871529229" style="color: rgb(0, 0, 0); font-family: Raleway; padding-bottom: 7px; font-size: 16px; font-weight: 500;">Присутствие на торжестве</div>
                                         <div class="t-input-block">
                                             <div class="t-radio__wrapper">
-                                                <fieldset><label class="t-radio__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="radio" value="С удовольствием приеду (приедем)" class="t-radio js-tilda-rule" name="Присутствие на торжестве" aria-label="Присутствие на торжестве" data-tilda-req="1">
+                                                <fieldset><label class="t-radio__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="radio" value="С удовольствием приеду (приедем)" class="t-radio js-tilda-rule" name="attendance" aria-label="Присутствие на торжестве" data-tilda-req="1">
                                                         <div class="t-radio__indicator"></div><span>С удовольствием приеду (приедем)</span>
-                                                    </label><label class="t-radio__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="radio" value="К сожалению, не получится" class="t-radio js-tilda-rule" name="Присутствие на торжестве" aria-label="Присутствие на торжестве" data-tilda-req="1">
+                                                    </label><label class="t-radio__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="radio" value="К сожалению, не получится" class="t-radio js-tilda-rule" name="attendance" aria-label="Присутствие на торжестве" data-tilda-req="1">
                                                         <div class="t-radio__indicator"></div><span>К сожалению, не получится</span>
                                                     </label></fieldset>
                                             </div>
@@ -4461,12 +4465,12 @@
                                         <div class="t-input-title" data-redactor-toolbar="no" field="nullli_title__1713871529230" style="color: rgb(0, 0, 0); font-family: Raleway; padding-bottom: 7px; font-size: 16px; font-weight: 500;">Предпочтения по еде</div>
                                         <div class="t-input-block"><input type="hidden" name="Предпочтения по еде" class="t-checkboxes__hiddeninput js-tilda-rule" tabindex="-1">
                                             <div class="t-checkboxes__wrapper">
-                                                <fieldset><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Рыба и морепродукты " class="t-checkbox">
+                                                <fieldset><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Рыба и морепродукты" name="food" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Рыба и морепродукты </span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Вегетарианская кухня" class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Вегетарианская кухня" name="food" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Вегетарианская кухня</span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Побольше мяса" class="t-checkbox">
-                                                        <div class="t-checkbox__indicator"></div><span>Побольше мяса</span>
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Мясо" name="food" class="t-checkbox">
+                                                        <div class="t-checkbox__indicator"></div><span>Мясо</span>
                                                     </label></fieldset>
                                             </div>
                                             <div class="t-input-error"></div>
@@ -4476,19 +4480,19 @@
                                         <div class="t-input-title" data-redactor-toolbar="no" field="nullli_title__1737053101329" style="color: rgb(0, 0, 0); font-family: Raleway; padding-bottom: 7px; font-size: 16px; font-weight: 500;">Предпочтения по напиткам</div>
                                         <div class="t-input-block"><input type="hidden" name="Предпочтения по напиткам" class="t-checkboxes__hiddeninput js-tilda-rule" tabindex="-1">
                                             <div class="t-checkboxes__wrapper">
-                                                <fieldset><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Шампанское" class="t-checkbox">
+                                                <fieldset><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Шампанское" name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Шампанское</span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Белое вино" class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Белое вино" name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Белое вино</span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Красное вино" class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Красное вино" name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Красное вино</span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Водка" class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Водка" name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Водка</span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Виски " class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Виски " name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Виски </span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Коньяк" class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Коньяк" name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Коньяк</span>
-                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Безалкогольные напитки" class="t-checkbox">
+                                                    </label><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Безалкогольные напитки" name="drink" class="t-checkbox">
                                                         <div class="t-checkbox__indicator"></div><span>Безалкогольные напитки</span>
                                                     </label>
                                                     <div class="t-input__own-answer-wrapper t-input__own-answer-wrapper-checkbox"><label class="t-checkbox__control" style="font-size: 14px; font-weight: 300; color: rgb(0, 0, 0); font-family: Raleway;"><input type="checkbox" value="Свой вариант" class="t-checkbox t-input__own-answer-input">
@@ -4534,6 +4538,26 @@
                                     </div>
                                 </div>
                                 <div style="position: absolute; left: -5000px; bottom: 0px; display: none;"><input type="text" name="form-spec-comments" class="js-form-spec-comments" tabindex="-1"></div>
+                                <script>
+                                  document.getElementById("form852226862").addEventListener("submit", function(e) {
+                                    e.preventDefault();
+
+                                    const formData = new FormData(this);
+
+                                    fetch("https://script.google.com/macros/s/AKfycbyqLqpiI4m5a7ZB1KCmZP57SozlrgsscqGehKroDdcapMusQo6MaozXBBzNvxl0MWSa/exec", {
+                                      method: "POST",
+                                      body: formData
+                                    })
+                                    .then(response => response.text())
+                                    .then(data => {
+                                      console.log("Ответ от сервера:", data);
+                                      alert("Спасибо, данные успешно отправлены!");
+                                    })
+                                    .catch(error => {
+                                      console.error("Ошибка:", error);
+                                    });
+                                  });
+                                </script>
                             </form>
                             <style id="t-zero-form-btn-styles-1713871529228-852226862">
                                 #rec852226862 [data-elem-id="1713871529228"] .t-submit {
