@@ -39,6 +39,70 @@
     <link rel="stylesheet" href="./Макет «Навсегда»_files/tilda-cart-1.0.min.css" type="text/css" media="all" onerror="this.loaderr=&#39;y&#39;;">
     <link rel="stylesheet" type="text/css" href="./Макет «Навсегда»_files/custom.css">
     <script nomodule="" src="./Макет «Навсегда»_files/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .qr-link {
+        cursor: pointer;
+        color: #007bff;
+        text-decoration: underline;
+        margin-right: 0px;
+      }
+
+      .popup-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        z-index: 1000;
+      }
+
+      .popup-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        position: relative;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+      }
+
+      .popup-overlay.active .popup-content {
+        transform: scale(1);
+      }
+
+      .popup-close {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 20px;
+        color: #999;
+        cursor: pointer;
+      }
+
+      .popup-close:hover {
+        color: #333;
+      }
+
+      .qr-image {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
     <script type="text/javascript">
         function t_onReady(func) {
             if (document.readyState != 'loading') {
@@ -4045,12 +4109,49 @@
                         <div class="tn-atom" field="tn_text_1715582940950" style="transform-origin: center center; line-height: 18px;">Просим оставить ваших малышей в надежных руках на день торжества, так как формат нашей свадьбы не предполагает детской зоны и аниматоров.</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__8522263071715582940953 t-animate t-animate_started" data-elem-id="1715582940953" data-elem-type="text" data-field-top-value="178" data-field-left-value="446" data-field-height-value="72" data-field-width-value="309" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="2" data-animate-scale="0.9" data-animate-mobile="y" data-field-textfit-value="autoheight" data-field-left-res-360-value="26" data-field-left-res-640-value="162" data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits" data-observer-ready="true" style="top: 178px; left: 446px; width: 309px; height: auto; transform: scale(0.9); transition-duration: 2s; zoom: 1.098;">
-                        <div class="tn-atom" field="tn_text_1715582940953" style="transform-origin: center center; line-height: 18px;">Если хотите порадовать нас цветами, мы будем рады цветочной подписке - так ваши поздравления будут с нами еще долго!</div>
+                        <div class="tn-atom" field="tn_text_1715582940953" style="transform-origin: center center; line-height: 18px;">Если хотите порадовать нас цветами, мы будем рады <a class="qr-link" id="IMG_4240.png">цветочной подписке</a> - так ваши поздравления будут с нами еще долго!</div>
                     </div>
 
                     <div class="t396__elem tn-elem tn-elem__8522263071715582940955 t-animate t-animate_started" data-elem-id="1715582940955" data-elem-type="text" data-field-top-value="87" data-field-left-value="448" data-field-height-value="54" data-field-width-value="305" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="2" data-animate-scale="0.9" data-animate-mobile="y" data-field-textfit-value="autoheight" data-field-left-res-360-value="28" data-field-left-res-640-value="164" data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits" data-observer-ready="true" style="top: 87px; left: 448px; width: 305px; height: auto; transform: scale(0.9); transition-duration: 2s; zoom: 1.098;">
-                        <div class="tn-atom" field="tn_text_1715582940955" style="transform-origin: center center; line-height: 18px;">Мы не хотим обременять вас поисками<br> подарка, поэтому будем рады вашему<br> вкладу в наш семейный бюджет.
+                        <div class="tn-atom" field="tn_text_1715582940955" style="transform-origin: center center; line-height: 18px;">Мы не хотим обременять вас поисками<br> подарка, поэтому будем рады вашему<br> вкладу в наш <a class="qr-link" id="IMG_4239.jpeg">семейный бюджет</a>.
                     </div>
+                    <!-- Popup -->
+                    <div class="popup-overlay" id="qrPopup">
+                      <div class="popup-content">
+                        <span class="popup-close" id="closePopup">&times;</span>
+                        <h3>QR-код</h3>
+                        <img class="qr-image" id="qrImage" src="" alt="QR Code">
+                      </div>
+                    </div>
+                    <script>
+                      const popup = document.getElementById('qrPopup');
+                      const qrImage = document.getElementById('qrImage');
+                      const closeBtn = document.getElementById('closePopup');
+
+                      // Обработка клика по ссылке
+                      document.querySelectorAll('.qr-link').forEach(link => {
+                        link.addEventListener('click', (e) => {
+                          e.preventDefault();
+                          const imgName = link.getAttribute('id');
+                          const qrUrl = `./Макет «Навсегда»_files/${imgName}`;
+                          qrImage.src = qrUrl;
+                          popup.classList.add('active');
+                        });
+                      });
+
+                      // Закрытие окна
+                      closeBtn.addEventListener('click', () => {
+                        popup.classList.remove('active');
+                      });
+
+                      popup.addEventListener('click', (e) => {
+                        if (e.target === popup) {
+                          popup.classList.remove('active');
+                        }
+                      });
+                    </script>
+
+
                     <style class="t396__scale-style">
                         .t-rec#rec852226307 {
                             overflow: visible;
